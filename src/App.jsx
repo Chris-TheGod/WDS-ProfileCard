@@ -1,13 +1,14 @@
 import { ProfileCard } from './ProfileCard'
+import user from './user.json'
 
 function App() {
   return (
     <>
       <ProfileCard
-        name='Kristjan'
-        phoneNumber='56565656'
-        age='24'
-        address='best street123'
+        name={user.name}
+        phoneNumber={user.phoneNumber}
+        age={user.age}
+        address={user.address}
       />
     </>
   )
